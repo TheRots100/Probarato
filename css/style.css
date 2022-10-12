@@ -25,6 +25,15 @@ login-modal .nav-tabs {
     border-bottom: none;
 }
 
-form.tab-content_login {
+.tab-content>.active{
     padding: 1rem;
+}
+.fade {
+    padding: 1rem;
+    transition: opacity .15s linear;
+}
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    left: 10px;
+    opacity: .65;
+    transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
 }

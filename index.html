@@ -50,22 +50,22 @@
                 <div class="modal fade" id="Loginmodal" tabindex="-1" aria-labelledby="exampleModalLabel" style="display: none;" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
-                            <div class="modal-header">
+                            <div class="modal-header" style="background-color: #E28033;">
                                 <h5 class="modal-title modal-logo" id="exampleModalLabel"> <img src="./img/Logo.png" width="200px" alt=""> </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body login-modal">
   
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                    <!--li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="Login-tab" data-bs-toggle="tab" data-bs-target="#Login" type="button" role="tab" aria-controls="home" aria-selected="true" >Ingresar</button>
+                                    </li-->
                                     <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="Login-tab" data-bs-toggle="tab" data-bs-target="#Login" type="button" role="tab" aria-controls="home" aria-selected="true">Login</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="Register-tab" data-bs-toggle="tab" data-bs-target="#Register" type="button" role="tab" aria-controls="profile" aria-selected="false">Registrarse</button>
+                                        <button class="nav-link active" id="Register-tab" data-bs-toggle="tab" data-bs-target="#Register" type="button" role="tab" aria-controls="home" aria-selected="true">Registrar Negocio</button>
                                     </li>
                                 </ul>
-                                <div class="tab-content" id="myTabContent">
-                                    <div class="tab-pane fade active show" id="Login" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="tab-content_RegistroNegocio" id="ContenidoTab">
+                                    <!--div class="tab-pane fade active show" id="Login" role="tabpanel" aria-labelledby="home-tab">
                                         <form class="tab-content_login">
                                             <div class="form-floating mb-3">
                                                 <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
@@ -75,16 +75,51 @@
                                                 <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
                                                 <label for="floatingPassword">Contraseña</label>
                                             </div>
-                                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn-outline-info" type="submit">Conectarse</button>
+                                            <button class="w-100 mb-2 btn btn-lg rounded-4 btn btn-outline-light" style="background-color: #E28033;" type="submit">Conectarse</button>
                                             <p class="contra_link"><a href="#">Te olvidaste tu Contraseña?</a></p>
                                         </form>
-                                    </div>
-                                    <div class="tab-pane fade" id="Register" role="tabpanel" aria-labelledby="profile-tab">
-                                    </div>
+                                    </div-->
+                                    <div class="tab-pane fade active show row g-3" id="Register" role="tabpanel" aria-labelledby="home-tab">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="NombreEmpresa" placeholder="Nombre de la Empresa">
+                                            <label for="floatingInput">Nombre de la Empresa</label>
+                                          </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="NombreDueno" placeholder="Nombre completo del Dueño">
+                                            <label for="floatingInput">Nombre completo del Dueño</label>
+                                          </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="DireccionNego" placeholder="Direccion del Negocio">
+                                            <label for="floatingInput">Direccion del Negocio</label>
+                                          </div>
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" placeholder="Descripcion del Negocio" id="DescripcionNego" style="height: 100px"></textarea>
+                                            <label for="floatingTextarea2">Descripcion del Negocio</label>
+                                          </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="number" class="form-control" id="NumeroNego" placeholder="Numero del Negocio">
+                                            <label for="floatingInput">Numero del Negocio</label>
+                                          </div>
+                                        <div class="mb-1">
+                                            <label for="formFile" class="form-label">Logo del Negocio</label>
+                                        </div>
+                                        <div class="input-group mb-3">
+                                            <input type="file" class="form-control" id="LogoEmpresa" aria-describedby="BotonSubirLogo" aria-label="Upload">
+                                            <button class="btn btn-outline-secondary" type="button" id="BotonSubirLogo">Subir</button>
+                                          </div>
+                                        <div class="form-floating mb-3 col-sm-6">
+                                            <input type="time" class="form-control" id="HoraIni" placeholder="Hora de Apertura">
+                                            <label for="floatingInput">Hora de Apertura</label>
+                                          </div>
+                                        <div class="form-floating mb-3 col-sm-6">
+                                            <input type="time" class="form-control" id="HoraFin" placeholder="Hora de Cierre">
+                                            <label for="floatingInput">Hora de Cierre</label>
+                                            </div>
+                                        <hr class="my-4 mb-3">
+                                        <button class="w-100 btn btn-outline-light" id="BotonReg" type="submit" style="background-color: #E28033;">Registrarse</button>
                                 </div>
-  
                             </div>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>
