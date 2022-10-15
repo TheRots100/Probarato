@@ -114,29 +114,29 @@
                                         <form class="tab-content_Promotion" ></form>
 
                                             <label for="name"> Nombre del Producto</label>
-                                            <input type="text" class="form-control" id="name" ></div>
+                                            <input type="text" class="form-control" id="name" required></div>
                                             
                                             <div class="row">
                                                 <div class="form-group col">
                                                     <label >Precio Original</label>
-                                                    <input type="text" class="form-control" placeholder="Bs">
+                                                    <input type="text" class="form-control" placeholder="Bs" required>
                                                 </div>
                                                 <div class="form-group col">
                                                     <label >Precio con Descuento</label>
-                                                    <input type="text" class="form-control" placeholder="Bs">
+                                                    <input type="text" class="form-control" placeholder="Bs" required>
                                                 </div>
                                             </div>
                                             
                                             <label for="location">Ubicación</label>
                                             
-                                                <input type="text" class="form-control " id="location">
+                                                <input type="text" class="form-control " id="location" required>
                                                 
                                             
                                             <label for="product">Descripción del Producto</label>
-                                            <textarea class="form-control" id="product" rows="7"></textarea>
+                                            <textarea class="form-control" id="product" rows="7" required></textarea>
                                                
                                             <label for="category"> Categoria</label>
-                                            <select class="custom-select">
+                                            <select class="custom-select" required>
                                                 <option selected>Categorias(despegable)</option>
                                                 <option value="1">One</option>
                                                 <option value="2">Two</option>
@@ -146,22 +146,22 @@
                                             <div class="row">
                                                 <div class="form-group col">
                                                     <label >Fecha inicio</label>
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" class="form-control" required>
                                                 </div>
                                                 <div class="form-group col">
                                                     <label >Fecha fin</label>
-                                                    <input type="date" class="form-control">
+                                                    <input type="date" class="form-control" required>
                                                     
                                                 </div>
                                             </div>
                                             <div class="row my-1 justify-content-evenly">
                                                 <div class=" col-sm-6">
                                                     <label for="HoraIni" class="form-group">Hora inicio</label>
-                                                    <input type="time" class="form-control" id="HoraIni" placeholder="Hora de Apertura"> 
+                                                    <input type="time" class="form-control" id="HoraIni" placeholder="Hora de Apertura" required> 
                                                   </div>
                                                   <div class=" col-sm-6">
                                                   <label for="horaFin" class="form-group">Hora fin</label>
-                                                    <input type="time" class="form-control" id="HoraFin" placeholder="Hora de Cierre">
+                                                    <input type="time" class="form-control" id="HoraFin" placeholder="Hora de Cierre" required>
                                                 </div>
 
                                             </div>
@@ -172,7 +172,7 @@
 
                                             <form enctype="multipart/form-data" action="uploader.php" method="POST"> <input name="subir" type="file" />
                 
-                                                <input type="submit" value="Subir archivo" /> 
+                                                <input type="submit" value="Subir archivo" required> 
                                             
                                             </form></p>
 
