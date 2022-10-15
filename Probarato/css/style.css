@@ -1,0 +1,39 @@
+
+.carousel-inner>.carousel-item>img {
+    margin: 0 auto;
+}
+.btn-circle.btn-sm {
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding: 0 0;
+    border-radius: 15px;
+}
+
+.bi-person-circle {
+    width: 100px;
+    height: 100px;
+    padding: 0px 0px;
+}
+.btn-group-sm>.btn, .btn-sm {
+    padding: 0 0;
+    font-size: 1.9rem;
+    line-height: 0;
+    border-radius: 0.2rem;
+}
+login-modal .nav-tabs {
+    border-bottom: none;
+}
+
+.tab-content>.active{
+    padding: 1rem;
+}
+.fade {
+    padding: 1rem;
+    transition: opacity .15s linear;
+}
+.form-floating>.form-control-plaintext~label, .form-floating>.form-control:focus~label, .form-floating>.form-control:not(:placeholder-shown)~label, .form-floating>.form-select~label {
+    left: 10px;
+    opacity: .65;
+    transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+}
