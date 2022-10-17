@@ -1,3 +1,11 @@
+#logo {
+    vertical-align: middle;
+    border-style: none;
+    margin-left: 5rem;
+}
+.p-3 {
+    padding: 0rem!important;
+}
 
 .carousel-inner>.carousel-item>img {
     margin: 0 auto;
