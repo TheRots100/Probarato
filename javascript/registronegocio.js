@@ -19,7 +19,9 @@ async function doPostRequest(){
   .then(json => console.log(json))
   
 }
-
+function Redir(){
+  location.href = "index.html";
+}
 document.getElementById('BotonReg').addEventListener('click', doPostRequest);
 // axios({
 //   url: 'http://tudireccion.com',
