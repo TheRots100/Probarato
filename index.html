@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="/SCSS/custom.scss">
     <link rel="stylesheet" href="/css/style.css">
     <!-- Local style sheet relative to this file -->
+    <link href="//db.onlinewebfonts.com/c/ef6bdf5ef216552c7e9869841e891ca0?family=Arial+Rounded+MT+Bold" rel="stylesheet" type="text/css"/>
     <!-- Embedded style sheet -->
     <style>
     </style>
@@ -58,7 +59,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header" style="background-color: #E28033;">
-                                <h5 class="modal-title modal-logo" id="exampleModalLabel"> <img src="./img/Logo.png" width="200px" alt=""> </h5>
+                                <h5 class="modal-title modal-logo" id="exampleModalLabel"> <img src="./img/Logo.png" width="45" alt=""> </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body login-modal">
@@ -87,46 +88,48 @@
                                         </form>
                                     </div-->
                                     <div class="tab-pane fade show active" id="Register" role="tabpanel" aria-labelledby="home-tab">
-                                        <form action="" class="formulario" id ="formulario">
+                                        <div class="row g-3">
+                                            <form action="" class="formulario" id ="formulario">
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="NombreEmpresa" placeholder="Nombre de la Empresa">
+                                            <input type="text" class="form-control" id="NombreEmpresa" placeholder="Nombre de la Empresa" required>
                                             <label for="floatingInput">Nombre de la Empresa</label>
                                         </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="NombreDueno" placeholder="Nombre completo del Dueño">
+                                            <input type="text" class="form-control" id="NombreDueno" placeholder="Nombre completo del Dueño" required>
                                             <label for="floatingInput">Nombre completo del Dueño</label>
                                           </div>
                                         <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="DireccionNego" placeholder="Direccion del Negocio">
+                                            <input type="text" class="form-control" id="DireccionNego" placeholder="Direccion del Negocio" required>
                                             <label for="floatingInput">Direccion del Negocio</label>
                                           </div>
                                         <div class="form-floating mb-3">
-                                            <textarea class="form-control" placeholder="Descripcion del Negocio" id="DescripcionNego" style="height: 100px"></textarea>
+                                            <textarea class="form-control" placeholder="Descripcion del Negocio" id="DescripcionNego" style="height: 100px" required></textarea>
                                             <label for="floatingTextarea2">Descripcion del Negocio</label>
                                           </div>
                                         <div class="form-floating mb-3">
-                                            <input type="number" class="form-control" id="NumeroNego" placeholder="Numero del Negocio">
+                                            <input type="number" class="form-control" id="NumeroNego" placeholder="Numero del Negocio" required>
                                             <label for="floatingInput">Numero del Negocio</label>
                                           </div>
                                         <div class="mb-1">
                                             <label for="formFile" class="form-label">Logo del Negocio</label>
                                         </div>
                                         <div class="input-group mb-3">
-                                            <input type="file" class="form-control" id="LogoEmpresa" aria-describedby="BotonSubirLogo" aria-label="Upload">
-                                            <button class="btn btn-outline-secondary" type="button" id="BotonSubirLogo">Subir</button>
+                                            <input type="file" class="form-control" id="LogoEmpresa" aria-describedby="BotonSubirLogo" aria-label="Upload" onchange="return ValidarExt()" required>
                                           </div>
-                                          <div class="row my-1 justify-content-evenly">
-                                            <div class="col-sm-6">
+
+                                          <div class="row">
+                                        <div class="form-floating mb-3 col-sm-5">
+                                            <input type="time" class="form-control" id="HoraIni" placeholder="Hora de Apertura" required>
                                             <label for="floatingInput">Hora de Apertura</label>
                                             <input type="time" class="form-control" id="HoraIni" placeholder="Hora de Apertura">
                                             
                                           </div>
-                                          <div class="col-sm-6">
+
+                                        <div class="form-floating mb-3 col-sm-5">
+                                            <input type="time" class="form-control" id="HoraFin" placeholder="Hora de Cierre" required>
                                             <label for="floatingInput">Hora de Cierre</label>
-                                            <input type="time" class="form-control" id="HoraFin" placeholder="Hora de Cierre">
-                                            
+                                            </div>
                                         </div>
-                                    </div>
                                         <hr class="my-4 mb-3">
                                         <button class="w-100 btn btn-outline-light" id="BotonReg" type="submit" style="background-color: #E28033;">Registrarse</button>
                                     </form>
@@ -191,6 +194,7 @@
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script type="" src="javascript/registronegocio.js"></script>
+    <script type="" src="javascript/Validacion.js"></script>
   </body>
 
 </html>

@@ -1,3 +1,7 @@
+@import url(//db.onlinewebfonts.com/c/ef6bdf5ef216552c7e9869841e891ca0?family=Arial+Rounded+MT+Bold);
+body{
+    font-family: Arial Rounded MT Bold;
+}
 #logo {
     vertical-align: middle;
     border-style: none;
@@ -44,4 +48,7 @@ login-modal .nav-tabs {
     left: 10px;
     opacity: .65;
     transform: scale(.85) translateY(-0.5rem) translateX(0.15rem);
+}
+.Input_Error-activo{
+    display: block;
 }
