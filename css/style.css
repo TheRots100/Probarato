@@ -74,3 +74,7 @@ input#HoraIniPromo.form-control{
 input#HoraFinPromo.form-control{
     width: 50%;
 }
+div#BotonesEnv{
+    display: flex;
+    justify-content: space-between;
+}
