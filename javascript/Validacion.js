@@ -1,3 +1,4 @@
+
 document.getElementById('formulario').addEventListener('submit',(e)=>{
     e.preventDefault();
     let nombre = /^[a-zA-ZÀ-ÿ\s]{3,32}$/;
@@ -13,7 +14,8 @@ document.getElementById('formulario').addEventListener('submit',(e)=>{
     if(nombreDueno== null || nombreDueno.length == 0 || nombre.test(nombreDueno)== false){
       document.getElementById('NombreDueno').style.boxShadow = "0 0 5px red";
       return false;
-    }else{document.getElementById('NombreDueno').style.boxShadow = "0 0 0";}
+    }else{document.getElementById('NombreDueno').style.boxShadow = "0 0 0";
+}
   
     dirNego = document.getElementById("DireccionNego").value;
     if(dirNego == null || dirNego == 0 || direccion.test(dirNego)== false){
