@@ -29,7 +29,8 @@ function Redir(){
       ubicacion : document.getElementById("DireccionNego").value,
       telefono : document.getElementById("NumeroNego").value,
       horario_inicio : document.getElementById("HoraIni").value,
-      horario_cierre : document.getElementById("HoraFin").value
+      horario_cierre : document.getElementById("HoraFin").value,
+      photo : document.getElementById("LogoEmpresa").files[0]
     }),
     headers: {
       "Content-type": "application/json"
@@ -39,7 +40,7 @@ function Redir(){
   .then(json => console.log(json))
   location.href = "index.html";
 }
-document.getElementById('BotonReg').addEventListener('click', doPostRequest);
+document.getElementById('BotonReg').addEventListener('click', Redir);
 // axios({
 //   url: 'http://tudireccion.com',
 //   method: 'post',
