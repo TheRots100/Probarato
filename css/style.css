@@ -52,3 +52,24 @@ login-modal .nav-tabs {
 .Input_Error-activo{
     display: block;
 }
+div.row.row-col-2{
+    margin-right: -30rem;
+}
+input#PreDescuento.form-control{
+    width: 60%;
+}
+input#PreOriginal.form-control{
+    width: 60%;
+}
+input#FechaIniPromo.form-control{
+    width: 50%;
+}
+input#FechaFinPromo.form-control{
+    width: 50%;
+}
+input#HoraIniPromo.form-control{
+    width: 50%;
+}
+input#HoraFinPromo.form-control{
+    width: 50%;
+}

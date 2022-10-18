@@ -36,41 +36,43 @@
                 <div>
                     <h2 style="text-align: center;"><span style="color: #E28033;">Registrar Promoción</span> </h2>
                 </div>
+                <form action=""class="formularioPromo" id ="formularioPromo" >
                 <div class="form-floating mb-3">
-                    <input type="text" class="form-control" id="NomProducto" placeholder="Nombre Del Producto">
+
+                    <input type="text" class="form-control" id="NomProductoPromo" placeholder="Nombre Del Producto" required>
                     <label for="floatingInput">Nombre del Producto</label>
                   </div>
 
-                <div class="row row-cols-2">
+                <div class="row row-col-2 ">
                     <div class="form-group col-2">
                         <label >Precio Original </label>
-                        <input type="text" class="form-control" placeholder="Bs">
+                        <input type="number" class="form-control" placeholder="Bs" id="PreOriginal" required>
                     </div>
                 <div class="form-group col-2">
                         <label >Precio con Descuento</label>
-                        <input type="text" class="form-control" placeholder="Bs">
+                        <input type="number" class="form-control" placeholder="Bs" id="PreDescuento" required>
                     </div>
                     </div>
                 <div class="form-floating mb-3">
-                        <input type="text" class="form-control" id="Direccion" placeholder="Direccion de la sucursal">
+                        <input type="text" class="form-control" id="DirPromo" placeholder="Direccion de la sucursal" required>
                         <label for="floatingInput">Direccion de la sucursal</label>
                       </div>
                 <div class="form-floating mb-3">
-                        <textarea class="form-control" placeholder="Descripcion del producto" id="DescripcionProducto" style="height: 200px"></textarea>
+                        <textarea class="form-control" placeholder="Descripcion del producto" id="DesPromo" style="height: 200px" required></textarea >
                         <label for="floatingTextarea2">Descripcion del producto</label>
                       </div>
                 <div class="mb-1">
                         <label for="formFile" class="form-label">Imagen de la Promocion</label>
                     </div>
                 <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="LogoEmpresa" aria-describedby="BotonSubirLogo" aria-label="Upload">
+                        <input type="file" class="form-control" id="imgPromo" aria-describedby="BotonSubirLogo" aria-label="Upload" required>
                         <button class="btn btn-outline-secondary" type="button" id="BotonSubirLogo">Subir</button>
                       </div>
                 <div class="mb-1">
                         <label for="formFile" class="form-label">Categoria</label>
                     </div>
                 <div class="input-group mb-3">
-                    <select class="custom-select">
+                    <select class="custom-select" required>
                         <option selected>Categorias(despegable)</option>
                         <option value="1">Postre</option>
                         <option value="2">Bebida</option>
@@ -82,22 +84,22 @@
                 <div class="row row-cols-2">
                         <div class="form-group col">
                             <label >Fecha inicio</label>
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" id="FechaIniPromo">
                         </div>
                         <div class="form-group col">
                             <label >Fecha fin</label>
-                            <input type="date" class="form-control">
+                            <input type="date" class="form-control" id="FechaFinPromo">
                             
                         </div>
                     </div>
-                    <div class="row row-cols-2">
+                    <div class="row row-cols-2" >
                         <div class="form-group col">
                             <label >Hora inicio</label>
-                            <input type="time" class="form-control">
+                            <input type="time" class="form-control" id="HoraIniPromo">
                         </div>
-                        <div class="form-group col">
-                            <label >hora fin</label>
-                            <input type="time" class="form-control">
+                        <div class="form-group col" >
+                            <label >Hora fin</label>
+                            <input type="time" class="form-control" id="HoraFinPromo">
                             
                         </div>
                     </div>   
@@ -106,7 +108,7 @@
                         <button class="w-20 btn btn-outline-light" id="BtnReg" type="submit" style="background-color: #E28033;">Registrar</button>
                         <button class="w-20 btn btn-outline-light" id="BtnCancel" type="submit" style="background-color: #E28033;" onclick="Redir()">Cancelar</button>  
                         </div>
-
+                    </form>
             </div>
             <div class="col-sm-3">
 
@@ -118,6 +120,7 @@
 </main>   
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script type="" src="javascript/registronegocio.js"></script>
+<script type="" src="javascript/ValidacionRegPromo.js"></script>
     </header>
 </body>
 </html>
