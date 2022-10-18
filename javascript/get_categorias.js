@@ -14,6 +14,6 @@ async function getDestacados(){
   }
 }
 
-getDestacados();
+// getDestacados();
 
 // document.addEventListener("DOMContentLoaded", getDestacados);
