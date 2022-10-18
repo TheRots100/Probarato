@@ -1,25 +1,7 @@
-//async function doPostRequest(){
-//  fetch('http://localhost:8000/api/registro/negocio', {
-//    method: 'POST',
-//    body: JSON.stringify({
-//      id_usuario : 1,
-//      nombre : document.getElementById("NombreEmpresa").value,
-//      descrip : document.getElementById("DescripcionNego").value, 
-//      ubicacion : document.getElementById("DireccionNego").value,
-//      telefono : document.getElementById("NumeroNego").value,
-//      horario_inicio : document.getElementById("HoraIni").value,
-//      horario_cierre : document.getElementById("HoraFin").value
-//    }),
-//    headers: {
-//      "Content-type": "application/json"
-//    }
-//  })
-//  .then(response => response.json())
-//  .then(json => console.log(json))
-//  
-//}
 
-function Redir(){
+async function Redir(){
+  var a = document.getElementById("LogoEmpresa").files[0];
+  console.log(a);
   fetch('http://localhost:8000/api/registro/negocio', {
     method: 'POST',
     body: JSON.stringify({
@@ -38,7 +20,7 @@ function Redir(){
   })
   .then(response => response.json())
   .then(json => console.log(json))
-  location.href = "index.html";
+  // location.href = "index.html";
 }
 document.getElementById('BotonReg').addEventListener('click', Redir);
 // axios({
