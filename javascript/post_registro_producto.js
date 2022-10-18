@@ -24,4 +24,4 @@ async function postProducto(){
   .then(json => console.log(json))
   // location.href = "index.html";
 }
-document.getElementById('BtnReg').addEventListener('click', postProducto);
+// document.getElementById('BtnReg').addEventListener('click', postProducto);

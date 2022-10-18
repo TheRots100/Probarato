@@ -22,7 +22,7 @@ async function Redir(){
   .then(json => console.log(json))
   // location.href = "index.html";
 }
-document.getElementById('BotonReg').addEventListener('click', Redir);
+// document.getElementById('BotonReg').addEventListener('click', Redir);
 // axios({
 //   url: 'http://tudireccion.com',
 //   method: 'post',
