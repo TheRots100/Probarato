@@ -1,11 +1,11 @@
-document.getElementById('formulario').addEventListener('submit',(e)=>{
+document.getElementById('formularioPromo').addEventListener('submit',(e)=>{
     e.preventDefault();
     let nombre = /^[a-zA-ZÀ-ÿ\s]{3,32}$/;
     let direccion = /^[a-zA-Z0-9\_\-]{10,64}$/;
     let telefono = /^\d{7,9}$/;
-    nombreEmpresa = document.getElementById("NombreEmpresa").value;
-    if(nombreEmpresa== null || nombreEmpresa.length == 0 || nombre.test(nombreEmpresa)== false){
-      document.getElementById('NombreEmpresa').style.boxShadow = "0 0 5px red";
+    nombreProducto = document.getElementById("NomProductoPromo").value;
+    if(nombreProducto== null || nombreProducto.length == 0 || nombre.test(nombreProducto)== false){
+      document.getElementById('NomProductoPromo').style.boxShadow = "0 0 5px red";
       return false;
     }else{document.getElementById('NombreEmpresa').style.boxShadow = "0 0 0";}
   
