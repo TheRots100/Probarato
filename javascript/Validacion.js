@@ -32,6 +32,7 @@ document.getElementById('formulario').addEventListener('submit',(e)=>{
       document.getElementById('NumeroNego').style.boxShadow = "0 0 5px red";
       return false;
     }else{document.getElementById('NumeroNego').style.boxShadow = "0 0 0";}
+    post_registro_negocio();
   })
 
 

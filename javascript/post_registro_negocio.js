@@ -1,8 +1,8 @@
 
-async function Redir(){
+async function post_registro_negocio(){
   var a = document.getElementById("LogoEmpresa").files[0];
   console.log(a);
-  fetch('http://localhost:8000/api/registro/negocio', {
+  await fetch('http://localhost:8000/api/registro/negocio', {
     method: 'POST',
     body: JSON.stringify({
       id_usuario : 1,

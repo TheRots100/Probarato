@@ -7,7 +7,7 @@ document.getElementById('formularioPromo').addEventListener('submit',(e)=>{
     if(nombreProducto== null || nombreProducto.length == 0 || nombre.test(nombreProducto)== false){
       document.getElementById('NomProductoPromo').style.boxShadow = "0 0 5px red";
       return false;
-    }else{document.getElementById('NombreEmpresa').style.boxShadow = "0 0 0";}
+    }else{document.getElementById('NomProductoPromo').style.boxShadow = "0 0 0";}
   
     nombreDueno = document.getElementById("NombreDueno").value;
     if(nombreDueno== null || nombreDueno.length == 0 || nombre.test(nombreDueno)== false){
@@ -32,6 +32,7 @@ document.getElementById('formularioPromo').addEventListener('submit',(e)=>{
       document.getElementById('NumeroNego').style.boxShadow = "0 0 5px red";
       return false;
     }else{document.getElementById('NumeroNego').style.boxShadow = "0 0 0";}
+    postProducto();
   })
 
 
